@@ -21,10 +21,10 @@
 
 
 
-function primeNumber(firstNum, secondNum) {
+function getPrime(min, max) {
   var results=[];
   
-  for (let x = firstNum; x < secondNum; x++) {
+  for (let x = min; x < max; x++) {
      const element = x;
      if (element===1) {
         results.push(undefined);
@@ -40,7 +40,7 @@ function primeNumber(firstNum, secondNum) {
              
      }
      else if (element>3) {
-        for (let y = 2; y < element; y++) {
+        for (let y = 2; y <= element/2; y++) {
            var result;
            if (element%y==0) {
 
@@ -62,6 +62,27 @@ function primeNumber(firstNum, secondNum) {
   console.log(results)
   return results;
 }
-primeNumber(5,1000)
+getPrime(1,100)
 
 
+
+
+// function getPrime(min,max) {
+//    for (let i = min; i < max; i++) {
+//       isPrime=1;
+//       for (let j = min; j <= i/2; j++) {
+//          if (i%j==0) {
+//             isPrime=0
+//             break
+//          }
+
+         
+//       }
+//       if (isPrime==1) {
+//          console.log(i)
+//       }
+      
+//    }
+   
+// }
+// getPrime(5,500)
