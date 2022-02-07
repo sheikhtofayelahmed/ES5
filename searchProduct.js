@@ -9,11 +9,11 @@ function search(products,searchText) {
     let product=[];
     for (let i = 0; i < products.length; i++) {
         const element = products[i];
-        if (element.name==='iphone') {
+        if (element.name.includes(searchText)) {
             product=element;
         }
         
     }
     return product;
 }
-console.log(search(products));
+console.log(search(products,'iphone')); 
