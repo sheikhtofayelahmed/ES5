@@ -1,0 +1,11 @@
+// search 
+// includes
+// indexof
+// startswith
+// endswith
+// split
+// slice
+// substr
+// substring
+// concat
+// join

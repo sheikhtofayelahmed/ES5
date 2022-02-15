@@ -39,4 +39,4 @@ function countVowel(str) {
     }
     
 
-countVowel('How Are you my friend?'.toLowerCase())
+countVowel('tasphia tahsin khan sanjana'.toLowerCase())
